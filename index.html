@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Bot</title>
+  <meta name="description" content="Invite our Discord bot to your server.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(88,101,242,.35), transparent 35%),
+        radial-gradient(circle at 80% 80%, rgba(114,46,209,.25), transparent 35%),
+        #0b0b12;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      width: min(760px, 100%);
+      text-align: center;
+      padding: 56px 30px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 28px;
+      background: rgba(20,20,32,.82);
+      box-shadow: 0 24px 80px rgba(0,0,0,.45);
+      backdrop-filter: blur(14px);
+    }
+    .icon {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 24px;
+      border-radius: 28px;
+      display: grid;
+      place-items: center;
+      font-size: 52px;
+      background: linear-gradient(135deg, #5865f2, #8b5cf6);
+      box-shadow: 0 14px 35px rgba(88,101,242,.35);
+    }
+    h1 { font-size: clamp(38px, 8vw, 64px); margin-bottom: 14px; }
+    .tagline {
+      color: #c8c8d4;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 570px;
+      margin: 0 auto 30px;
+    }
+    .invite {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: #5865f2;
+      padding: 16px 30px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: 700;
+      transition: transform .2s, background .2s;
+      box-shadow: 0 10px 25px rgba(88,101,242,.28);
+    }
+    .invite:hover { transform: translateY(-2px); background: #4752c4; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 38px;
+    }
+    .feature {
+      padding: 20px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .feature b { display: block; margin-bottom: 7px; }
+    .feature span { color: #aaaabd; font-size: 14px; line-height: 1.45; }
+    footer { margin-top: 32px; color: #77778a; font-size: 13px; }
+    @media (max-width: 650px) {
+      .features { grid-template-columns: 1fr; }
+      .card { padding: 42px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="icon">🤖</div>
+    <h1>My Discord Bot</h1>
+    <p class="tagline">
+      Add the bot to your Discord server and get started with its commands and features.
+    </p>
+
+    <a class="invite"
+       href="https://discord.com/oauth2/authorize?client_id=1548021530552828054&scope=applications.commands%20bot&permissions=8"
+       target="_blank" rel="noopener noreferrer">
+      Invite to Discord
+    </a>
+
+    <section class="features">
+      <div class="feature">
+        <b>⚡ Easy Setup</b>
+        <span>Invite the bot and get it running in your server.</span>
+      </div>
+      <div class="feature">
+        <b>🛠️ Commands</b>
+        <span>Use slash commands directly inside Discord.</span>
+      </div>
+      <div class="feature">
+        <b>🔒 Server Ready</b>
+        <span>Designed to work across Discord servers.</span>
+      </div>
+    </section>
+
+    <footer>© 2026 My Discord Bot</footer>
+  </main>
+</body>
+</html>
